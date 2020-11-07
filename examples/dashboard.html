@@ -55,90 +55,121 @@
           <div class="accordion" id="accordionExample">
             <!-- Nav items -->
             <ul class="navbar-nav">
+
               <li class="nav-item">
-                <a class="nav-link active" href="dashboard.html">
-                  <i class="ni ni-tv-2"></i>
-                  <span class="nav-link-text">Dashboard</span>
+                <a href="dashboard.html" class="list-group-item list-group-item-action flex-column align-items-start active">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="ni ni-tv-2 mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Dashboard</span>
+                  </div>
                 </a>
               </li>
 
-
-
               <li class="nav-item">
-                <div class="panel-heading" id="heading1">
-                  <a class="nav-link accordion-toggle collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    <i class="fa fa-list-alt" aria-hidden="true"></i>
-                    <span class="nav-link-text">Orders</span>
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-list-alt mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Orders</span>
+                  </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new order</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View orders</span>
                   </a>
                 </div>
-                <div id="collapse1" class=" collapse" aria-labelledby="heading1" data-parent="#accordionExample">
-                  <div class="navbar-inner">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="">
-                          <span class="nav-link-text">Create order</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="">
-                          <span class="nav-link-text">View orders</span>
-                        </a>
-                      </li>
-                    </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-ship mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Shipments</span>
                   </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new shipment</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View shipments</span>
+                  </a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse"  href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                  <i class="fa fa-list-alt" aria-hidden="true"></i>
-                  <span class="nav-link-text">Orders</span>
-                </a>
-                <div id="collapse2" class=" collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="navbar-inner">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="">
-                          <span class="nav-link-text">Create order</span>
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="">
-                          <span class="nav-link-text">Delete order</span>
-                        </a>
-                      </li>
-                    </ul>
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-cube mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Packages</span>
                   </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new package</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View packages</span>
+                  </a>
                 </div>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-ship"></i>
-                  <span class="nav-link-text">Shipments</span>
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-user mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Customers</span>
+                  </div>
                 </a>
+                <!-- Submenu content -->
+                <div id='submenu4' class="collapse sidebar-submenu">
+                  <a href="create_customer.html" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new customer</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View customers</span>
+                  </a>
+                </div>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-cube"></i>
-                  <span class="nav-link-text">Packages</span>
+                <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-truck mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Vehicles</span>
+                  </div>
                 </a>
+                <!-- Submenu content -->
+                <div id='submenu5' class="collapse sidebar-submenu">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new vehicle</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View vehicles</span>
+                  </a>
+                </div>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span class="nav-link-text">Customers</span>
+                <a href="#submenu6" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-start align-items-center">
+                    <i class="fa fa-users mr-3" aria-hidden="true"></i>
+                    <span class="menu-collapsed">Employees</span>
+                  </div>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-truck" aria-hidden="true"></i>
-                  <span class="nav-link-text">Vehicles</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">
-                  <i class="fa fa-users" aria-hidden="true"></i>
-                  <span class="nav-link-text">Employees</span>
-                </a>
+                <!-- Submenu content -->
+                <div id='submenu6' class="collapse sidebar-submenu">
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">Add new employee</span>
+                  </a>
+                  <a href="#" class="list-group-item list-group-item-action">
+                    <span class="ml-4 menu-collapsed">View employees</span>
+                  </a>
+                </div>
               </li>
 
             </ul>
