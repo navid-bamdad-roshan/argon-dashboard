@@ -123,7 +123,7 @@
                 </a>
                 <!-- Submenu content -->
                 <div id='submenu4' class="collapse show sidebar-submenu">
-                  <a href="create_customer.html" class="list-group-item list-group-item-action active">
+                  <a href="create_customer.html" class="list-group-item list-group-item-action">
                     <span class="ml-4 menu-collapsed">Add new customer</span>
                   </a>
                   <a href="list_customers.html" class="list-group-item list-group-item-action">
@@ -297,9 +297,61 @@
                   <div class="col-8">
                     <h3 class="mb-0">Customer details </h3>
                   </div>
-                  <!-- <div class="col-4 text-right">
-                    <a href="#!" class="btn btn-primary">Submit</a>
-                  </div> -->
+                  <div class="col-4 text-right">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                      Edit
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Edit customer details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-first-name" style="float:left">First name</label>
+                                    <input type="text" id="input-first-name" class="form-control" placeholder="First name" value="">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-last-name" style="float:left">Last name</label>
+                                    <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-city" style="float:left">Email</label>
+                                    <input type="email" id="input-email" class="form-control" placeholder="Email" value="">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-country" style="float:left">Phone</label>
+                                    <input type="tel" id="input-phone" class="form-control" placeholder="Phone" value="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card-body">
@@ -324,13 +376,17 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-first-name">First name</label>
-                          <input type="text" id="input-first-name" class="form-control" placeholder="First name" value="">
+                          <br>
+                          <span>John</span>
+                          <!-- <input type="text" id="input-first-name" class="form-control" placeholder="First name" value=""> -->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-last-name">Last name</label>
-                          <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value="">
+                          <br>
+                          <span>Snow</span>
+                          <!-- <input type="text" id="input-last-name" class="form-control" placeholder="Last name" value=""> -->
                         </div>
                       </div>
                     </div>
@@ -346,27 +402,38 @@
                         </div>
                       </div>
                     </div> -->
+                    
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-city">Email</label>
-                          <input type="email" id="input-email" class="form-control" placeholder="Email" value="">
+                          <br>
+                          <span>person@people.com</span>
+                          <!-- <input type="email" id="input-email" class="form-control" placeholder="Email" value=""> -->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">Phone</label>
-                          <input type="tel" id="input-phone" class="form-control" placeholder="Phone" value="">
+                          <br>
+                          <span>+987654321</span>
+                          <!-- <input type="tel" id="input-phone" class="form-control" placeholder="Phone" value=""> -->
                         </div>
                       </div>
-                      <!-- <div class="col-lg-4">
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
                         <div class="form-group">
-                          <label class="form-control-label" for="input-country">Role</label>
-                          <input type="number" id="input-postal-code" class="form-control" placeholder="Postal code">
+                          <label class="form-control-label" for="input-country">Customer ID</label>
+                          <br>
+                          <span>
+                            c_1234
+                          </span>
                         </div>
-                      </div> -->
+                      </div>
                     </div>
                   </div>
+
                   <!-- <hr class="my-4" /> -->
                   <!-- Description -->
                   <!-- <h6 class="heading-small text-muted mb-4">About me</h6>
@@ -390,7 +457,71 @@
                     <h3 class="mb-0">Customer address</h3>
                   </div>
                   <div class="col-4 text-right">
-                    <a href="#!" class="btn btn-sm btn-primary">Remove</a>
+                    
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalEditAddress">
+                      Edit
+                    </button>
+                    <button type="button" class="btn btn-sm btn-primary">
+                      Delete
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="modalEditAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Edit customer address</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-country" style="float:left">Country</label>
+                                    <input type="text" id="input-country" class="form-control" placeholder="Country" value="">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-state" style="float:left">State</label>
+                                    <input type="text" id="input-state" class="form-control" placeholder="State" value="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-city" style="float:left">City</label>
+                                    <input type="text" id="input-city" class="form-control" placeholder="City" value="">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-postal-code" style="float:left">Postal code</label>
+                                    <input type="text" id="input-postal-code" class="form-control" placeholder="Postal code" value="">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="form-group">
+                                    <label class="form-control-label" for="input-address" style="float:left">Address</label>
+                                    <input type="text" id="input-address" class="form-control" placeholder="Address">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -416,13 +547,17 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-country">Country</label>
-                          <input type="text" id="input-country" class="form-control" placeholder="Country" value="">
+                          <br>
+                          <span>Estonia</span>
+                          <!-- <input type="text" id="input-country" class="form-control" placeholder="Country" value=""> -->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-state">State</label>
-                          <input type="text" id="input-state" class="form-control" placeholder="State" value="">
+                          <br>
+                          <span>Harjumaa</span>
+                          <!-- <input type="text" id="input-state" class="form-control" placeholder="State" value=""> -->
                         </div>
                       </div>
                     </div>
@@ -442,19 +577,25 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-city">City</label>
-                          <input type="text" id="input-city" class="form-control" placeholder="City" value="">
+                          <br>
+                          <span>Tallinn</span>
+                          <!-- <input type="text" id="input-city" class="form-control" placeholder="City" value=""> -->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-postal-code">Postal code</label>
-                          <input type="text" id="input-postal-code" class="form-control" placeholder="Postal code" value="">
+                          <br>
+                          <span>987654</span>
+                          <!-- <input type="text" id="input-postal-code" class="form-control" placeholder="Postal code" value=""> -->
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group">
                           <label class="form-control-label" for="input-address">Address</label>
-                          <input type="text" id="input-address" class="form-control" placeholder="Address">
+                          <br>
+                          <span>Address of the customer!</span>
+                          <!-- <input type="text" id="input-address" class="form-control" placeholder="Address"> -->
                         </div>
                       </div>
                     </div>
@@ -474,7 +615,6 @@
           </div>
         </div>
         <div class="row">
-            <!-- <div class="col d-flex justify-content-end pb-4"> -->
             <div class="col-12 d-flex justify-content-center pb-4">
               
               <button class="btn">
@@ -482,13 +622,13 @@
               </button>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col d-flex justify-content-end">
             <button class="btn btn-primary">
               Submit
             </button>
           </div>
-        </div>
+        </div> -->
         <!-- Footer -->
         <footer class="footer pt-0">
           <div class="row align-items-center justify-content-lg-between">
